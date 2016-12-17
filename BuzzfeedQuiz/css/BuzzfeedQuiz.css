@@ -1,0 +1,24 @@
+.header{
+    height:100px;
+    text-align:center;
+}
+
+.headingOne{
+    font-family:'Anton',sans-serif;
+    font-size:50px;
+    color:deepskyblue;
+}
+
+.headingTwo{
+    font-family:"Times New Roman",sans-serif;
+    font-size:40px;
+    color:mediumvioletred;
+}
+
+.submitbutton{
+    margin-top:10px;
+}
+
+#displayResult{
+    height:50px;
+}
