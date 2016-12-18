@@ -1,0 +1,40 @@
+.header{
+    height:100px;
+    text-align:center;
+    background-color: blueviolet;
+}
+
+.headingOne{
+    font-family:'Anton',sans-serif;
+    font-size:50px;
+    color:deepskyblue;
+    margin: 0 auto;
+}
+
+.mainBody{
+    background-image: url(../images/usaimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.question,.submitButton{
+    margin-left:10px;
+}
+
+.headingTwo{
+    font-family:"Times New Roman",sans-serif;
+    font-size:40px;
+    color: blueviolet;
+}
+
+.submitButton{
+    margin-top:10px;
+}
+
+input[type=button]{
+    width:70px;
+}
+
+#displayResult{
+    height:50px;
+}

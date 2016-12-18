@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Buzzfeed Quiz</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/BuzzfeedQuiz.css">
+
+    </head>
+
+    <body>
+
+
+            <div class="header">
+                <h1 class="headingOne">Which Part of America Should You Live In?</h1>
+            </div>
+
+            <div class ="mainBody">
+
+                <div class="question">
+                    <h2 class="headingTwo">Select a Food</h2>
+                    <input type="checkbox" class="food" value ="1"/>Hot Dogs<br>
+                    <input type="checkbox" class="food" value ="2"/>Pizza<br>
+                    <input type="checkbox" class="food" value ="3"/>Seafood<br>
+                    <input type="checkbox" class="food" value ="4"/>Fried Chicken<br>
+                    <input type="checkbox" class="food" value ="5"/>Barbecue<br>
+                </div>
+
+                <div class="question">
+                    <h2 class="headingTwo">Select a Beverage</h2>
+                    <input type="radio" class="beverage" value ="1"/>Beer<br>
+                    <input type="radio" class="beverage" value ="2"/>Cocktail<br>
+                    <input type="radio" class="beverage" value ="3"/>Wine<br>
+                    <input type="radio" class="beverage" value ="4"/>Sweet Tea<br>
+                    <input type="radio" class="beverage" value ="5"/>Tequila<br>
+                </div>
+
+                <div class="question">
+                    <h2 class="headingTwo">How Many Jackets Do You Own?</h2>
+                    <input type="text" id="jackets"/><br>
+                </div>
+
+                <div class="question">
+                    <h2 class="headingTwo">Select an Activity</h2>
+                    <select>
+                        <option selected class="activity" value="1">Watching Baseball</option>
+                        <option class="activity" value="2">Going to a Club</option>
+                        <option class="activity" value="3">Going to the Beach</option>
+                        <option class="activity" value="4">Going Camping</option>
+                        <option class="activity" value="5">Going to a Bar</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <h2 class="headingTwo">Select Some Scenery</h2>
+                    <select size="5">
+                        <option class="scenery" value="1">Snowy Fields</option>
+                        <option class="scenery" value="2">Fall Leaves</option>
+                        <option class="scenery" value="3">Mountains</option>
+                        <option class="scenery" value="4">Forest</option>
+                        <option class="scenery" value="5">Desert</option>
+                    </select>
+                </div>
+
+                <div class="submitButton">
+                    <input type="button" value="Submit" onclick="showResult()">
+                </div>
+
+                <div id="displayResult"></div>
+
+            </div>
+
+        <script src="js/BuzzfeedQuiz.js"></script>
+
+    </body>
+
+</html>
