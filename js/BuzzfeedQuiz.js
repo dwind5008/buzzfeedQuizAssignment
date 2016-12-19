@@ -56,7 +56,7 @@ function checkIfSelected(className){
     }
 }
 
-function showResult () {
+function calculateResult () {
 
     checkIfChecked("food");
     checkIfChecked("beverage");
@@ -65,18 +65,40 @@ function showResult () {
     checkIfSelected("scenery");
 
     if (sum <= 5) {
-    document.getElementById("displayResult").innerHTML = "<p>The Midwest</p>";
+        return "You like to enjoy things in spite of the cold. You should live in the Midwest.";
     }
     else if (sum > 5 && sum <=10) {
-        document.getElementById("displayResult").innerHTML = "<p>The Northeast</p>";
+        return "You are very cultured. Pick the Northeast.";
     }
     else if (sum > 10 && sum <=15) {
-        document.getElementById("displayResult").innerHTML = "<p>The West Coast</p>";
+        return "You like to hang out in the sun. Go to the West Coast.";
     }
     else if (sum > 15 && sum <=20) {
-        document.getElementById("displayResult").innerHTML = "<p>The South</p>";
+        return "You like to spend time outdoors. You would like the South.";
     }
     else if (sum > 20) {
-        document.getElementById("displayResult").innerHTML = "<p>The Southwest</p>";
+        return "You have a distinct personality. Pick the Southwest.";
+    }
+}
+
+document.getElementById('displayResult').innerHTML = calculateResult();
+
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }

@@ -14,63 +14,84 @@
 
     <body>
 
-
             <div class="header">
                 <h1 class="headingOne">Which Part of America Should You Live In?</h1>
             </div>
 
-            <div class ="mainBody">
+            <div class="mainBody">
 
-                <div class="question">
-                    <h2 class="headingTwo">Select a Food</h2>
-                    <input type="checkbox" class="food" value ="1"/>Hot Dogs<br>
-                    <input type="checkbox" class="food" value ="2"/>Pizza<br>
-                    <input type="checkbox" class="food" value ="3"/>Seafood<br>
-                    <input type="checkbox" class="food" value ="4"/>Fried Chicken<br>
-                    <input type="checkbox" class="food" value ="5"/>Barbecue<br>
+                <div class="questioncontainer" >
+                    <div class="question">
+                        <h2 class="headingTwo">Select a Food</h2>
+                        <div class = "checkboxcontainer">
+                            <input type="checkbox" class="food" value ="1"/>Hot Dogs<br>
+                            <input type="checkbox" class="food" value ="2"/>Pizza<br>
+                            <input type="checkbox" class="food" value ="3"/>Seafood<br>
+                            <input type="checkbox" class="food" value ="4"/>Fried Chicken<br>
+                            <input type="checkbox" class="food" value ="5"/>Barbecue<br>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h2 class="headingTwo">Select a Beverage</h2>
-                    <input type="radio" class="beverage" value ="1"/>Beer<br>
-                    <input type="radio" class="beverage" value ="2"/>Cocktail<br>
-                    <input type="radio" class="beverage" value ="3"/>Wine<br>
-                    <input type="radio" class="beverage" value ="4"/>Sweet Tea<br>
-                    <input type="radio" class="beverage" value ="5"/>Tequila<br>
+                <div class="questioncontainer" >
+                    <div class="question">
+                        <h2 class="headingTwo">Select a Beverage</h2>
+                        <div class = "radiocontainer">
+                            <input type="radio" class="beverage" value ="1"/>Beer<br>
+                            <input type="radio" class="beverage" value ="2"/>Cocktail<br>
+                            <input type="radio" class="beverage" value ="3"/>Wine<br>
+                            <input type="radio" class="beverage" value ="4"/>Sweet Tea<br>
+                            <input type="radio" class="beverage" value ="5"/>Tequila<br>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h2 class="headingTwo">How Many Jackets Do You Own?</h2>
-                    <input type="text" id="jackets"/><br>
+                <div class="questioncontainer" >
+                    <div class="question text">
+                        <h2 class="headingTwo">How Many Jackets Do You Own?</h2>
+                        <input type="text" id="jackets"/><br>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h2 class="headingTwo">Select an Activity</h2>
-                    <select>
-                        <option selected class="activity" value="1">Watching Baseball</option>
-                        <option class="activity" value="2">Going to a Club</option>
-                        <option class="activity" value="3">Going to the Beach</option>
-                        <option class="activity" value="4">Going Camping</option>
-                        <option class="activity" value="5">Going to a Bar</option>
-                    </select>
+                <div class="questioncontainer" >
+                    <div class="question">
+                        <h2 class="headingTwo">Select an Activity</h2>
+                        <select>
+                            <option selected class="activity" value="1">Watching Baseball</option>
+                            <option class="activity" value="2">Going to a Club</option>
+                            <option class="activity" value="3">Going to the Beach</option>
+                            <option class="activity" value="4">Going Camping</option>
+                            <option class="activity" value="5">Going to a Bar</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="question">
-                    <h2 class="headingTwo">Select Some Scenery</h2>
-                    <select size="5">
-                        <option class="scenery" value="1">Snowy Fields</option>
-                        <option class="scenery" value="2">Fall Leaves</option>
-                        <option class="scenery" value="3">Mountains</option>
-                        <option class="scenery" value="4">Forest</option>
-                        <option class="scenery" value="5">Desert</option>
-                    </select>
+                <div class="questioncontainer">
+                    <div class="question scenery">
+                        <h2 class="headingTwo">Select Some Scenery</h2>
+                        <select size="5">
+                            <option class="scenery" value="1">Snowy Fields</option>
+                            <option class="scenery" value="2">Fall Leaves</option>
+                            <option class="scenery" value="3">Mountains</option>
+                            <option class="scenery" value="4">Forest</option>
+                            <option class="scenery" value="5">Desert</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="submitButton">
-                    <input type="button" value="Submit" onclick="showResult()">
+                <div class="submitcontainer">
+                    <div class="submitButton">
+                        <button id="myBtn" onclick="calculateResult()">Submit</button>
+                    </div>
                 </div>
 
-                <div id="displayResult"></div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p id="displayResult"></p>
+                    </div>
+                </div>
+
 
             </div>
 
